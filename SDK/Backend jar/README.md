@@ -19,12 +19,12 @@ We feature a complete set of functionality, such as:
 - Push Notifications to iOS and Android devices  
 
 #####Note:
-- Built.io-3.1.2.jar contains built.io SDK. 
+- Built.io-3.1.3.jar contains built.io SDK. 
 
 Version
 ----
 
-3.1.2
+3.1.3
 
 
 Installation
@@ -34,17 +34,17 @@ Installation can be done in two ways.
 
 #### If user want to use built.io SDK.
 
-- Copy Built.io-3.1.2.jar to your project's libs folder.
+- Copy Built.io-3.1.3.jar to your project's libs folder.
 		  
    (OR)
 						
 - (If user want to use realtime jar then follow the following step)						
-  Copy Built.io-realtime-3.1.2.jar to your project's libs folder.
+  Copy Built.io-realtime-3.1.3.jar to your project's libs folder.
 
    (OR)
 
 - (If user want to use wearable jar then follow the following step)						
-  Copy Built.io-wearable-3.1.2.jar to your project's libs folder.
+  Copy Built.io-wearable-3.1.3.jar to your project's libs folder.
 
 
 

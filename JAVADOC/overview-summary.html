@@ -299,25 +299,6 @@ projectQuery.setCachePolicy(Built.CachePolicy.CACHE_ELSE_NETWORK);</font></code>
 </code></pre></li>
 </ol>
 </li>
-<li><h6 id="request-presence">Request Presence</h6>
-<p>In some chat applications, you may want to put a functionality that allows you to access other users&#39; presece details by requesting access. We provide a similar functionality with requestPresence function. You can request a certain user to access his presence. The example below demonstrates the syntax.</p>
-<pre><code>  
-   // &#39;blt5d4sample2633b&#39; is a dummy Application API key
-   BuiltApplication builtApplication = Built.application(context, &quot;blt5d4sample2633b&quot;);
-   BuiltUser userObject = builtApplication.user(&quot;bltba9a44506dd9e741&quot;);
-
-   userObject.requestPresence(new BuiltResultCallBack() {
-   
-     @Override
-     public void onCompletion(BuiltConstant.ResponseType type, BuiltError error){
-         if (error == null) {
-         //success block.
-         } else {
-         //More details if error occured while requesting presence.
-         }
-     }
-   });
-</code></pre></li>
 </ul>
 </li>
 </ul>
