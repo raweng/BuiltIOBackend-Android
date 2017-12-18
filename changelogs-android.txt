@@ -1,3 +1,39 @@
+Version: 3.1.2
+Date: 30-January-2017
+
+
+New Features:
+
+	*None
+
+
+API Modifications:
+
+	*None
+
+API Deprecation:
+
+	NOTE: GroupMultiple has been deprecated. Please read the following blog post to understand it better https://goo.gl/6Swaq4
+
+	* 'BuiltGroupMultiple' class deprecated.
+
+	*BuiltObject
+		1] Deprecated 'addGroup(BuiltGroupMultiple builtGroupMultiple)' method.
+		2] Deprecated 'getGroupMultiple(String key)' method.
+
+	*BuiltGroup
+		1] Deprecated 'addGroupMultiple(BuiltGroupMultiple builtGroupMultiple)' method.
+		2] Deprecated 'removeGroupMultiple(BuiltGroupMultiple builtGroupMultiple)' method.
+		3] Deprecated 'getGroupMultiple(String key)' method.
+
+Bug Fixes:
+
+	*None
+
+
+
+
+====================================================================================
 Version: 3.1.1
 Date: 02-December-2016
 
