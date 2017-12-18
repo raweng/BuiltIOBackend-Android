@@ -19,13 +19,12 @@ We feature a complete set of functionality, such as:
 - Push Notifications to iOS and Android devices  
 
 #####Note:
-- Built.io-2.2.1.jar contains built.io SDK. 
-- Built.io-2.2.1 UserInterface contains the built.io user interface kit. It helps to bootstrap common user interfaces quickly.
+- Built.io-3.0.0.jar contains built.io SDK. 
 
 Version
 ----
 
-2.2.1
+3.0.0
 
 
 Installation
@@ -33,40 +32,25 @@ Installation
 
 Installation can be done in two ways.
 
-####1. If user want to use only built.io SDK without UserInterface.
+#### If user want to use built.io SDK.
 
-- Copy Built.io-2.2.1-javadoc, Built.io-2.2.1.jar, Built.io-2.2.1.jar.properties to your project's libs folder.
+- Copy Built.io-3.0.0.jar to your project's libs folder.
 		  
    (OR)
 						
 - (If user want to use realtime jar then follow the following step)						
-  Copy Built.io-2.2.1-javadoc, Built.io-realtime-2.2.1.jar, Built.io-realtime-2.2.1.jar.properties to your project's libs folder.
-
-#####Dependencies
-* android-support-v4.jar
-* google-play-services_lib (You can find this library project from:- <android-sdk>/extras/google/google_play_services/libproject/google-play-services_lib/)
-
-######for more info please refer the following links:
-
-* http://developer.android.com/tools/support-library/index.html
-* http://developer.android.com/google/play-services/setup.html
-
-####2. If user want to use built.io SDK along with UserInterface.
-
-- Copy <code>built.io_userinterface_lib</code> (You can find this library project from:- SDK/Built.io-2.2.1 UserInterface/) to your project's libs folder. It includes 'Built.io-2.2.1-javadoc', 'Built.io-2.2.1.jar', 'Built.io-2.2.1.jar.properties'.
+  Copy Built.io-realtime-3.0.0.jar to your project's libs folder.
 
    (OR)
 
-- (If user want to use realtime jar then follow the following step)
-Replace the included 'Built.io-2.2.1.jar','Built.io-2.2.1.jar.propertie' file with 'Built.io-realtime-2.2.1.jar', 'Built.io-realtime-2.2.1.jar.properties' and add there reference to build path.
+- (If user want to use wearable jar then follow the following step)						
+  Copy Built.io-wearable-3.0.0.jar to your project's libs folder.
 
-* Add the library reference to your project. (your project, properties-->Android-->Add-->Select built.io_userinterface_lib )
-* android-support-v4.jar already included in library.
 
 
 License
 ----
 
-MIT
+Built.io
   
     

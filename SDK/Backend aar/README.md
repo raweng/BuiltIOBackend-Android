@@ -19,12 +19,12 @@ We feature a complete set of functionality, such as:
 - Push Notifications to iOS and Android devices  
 
 <h4>Note:</h4>
-- Built.io-2.2.1.aar contains built.io SDK. 
+- Built.io-3.0.0.aar contains built.io SDK. 
 
 Version
 ----
 
-2.2.1
+3.0.0
 
 
 Installation
@@ -58,22 +58,24 @@ Installation can be done in two ways.
         }
         dependencies {compile 'com.raweng.built:Built.io-realtime-x.x.x:x.x.x@aar'}
  
-    
+####(OR)
 
+#####If user want to use built.io SDK with android wear.
 
-####Dependencies
-* android-support-v4.jar
-* google-play-services_lib (You can find this library project from:- <android-sdk>/extras/google/google_play_services/libproject/google-play-services_lib/)
-
-##### for more info please refer the following links:
-
-* http://developer.android.com/tools/support-library/index.html
-* http://developer.android.com/google/play-services/setup.html
+ 1. Copy Built.io-wearable-xxx.aar to your project's libs folder.
+		  
+ 2. Add dependency code in your build.gradle file. 
+        repositories {
+            flatDir {
+    	        dirs 'libs'
+            }
+        }
+        dependencies {compile 'com.raweng.built:Built.io-wearable-x.x.x:x.x.x@aar'} 
 
 
 License
 ----
 
-MIT
+Built.io
   
     

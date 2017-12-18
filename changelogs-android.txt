@@ -1,3 +1,207 @@
+Version: 3.0.0
+Date: 26-October-2016
+
+
+New Features:
+
+	*Added android wear support from wear version 1.4.
+
+
+API Modifications:
+
+	* Renamed QueryResult class to BuiltQueryResult.
+	* Renamed ResponseType enum to BuiltResponseType.
+
+	*BuiltApplication
+		 1] Rename 'fetchClassesSchemaInBackground()' method to 'fetchClassesSchema()'
+		 2] Rename 'fetchLastActivitiesInBackground()' method to 'fetchLastActivities()'
+		 3] Rename 'fetchInfoInBackground()' method to 'fetchInfo()'
+
+	*BuiltClass
+		 1] Rename 'fetchSchemaInBackground()'	method to 'fetchSchema()'
+
+	*BuiltInstallation
+		 1] Rename 'createInstallationInBackground(String deviceToken, ArrayList<String> installationChannels)' method to  'createInstallation(String deviceToken, ArrayList<String> installationChannels)'
+
+		 2] Rename 'destroyInBackground()' method to 'destroy()'
+		 3] Rename 'updateInstallationInBackground(String deviceToken)' method to 'updateInstallation(String deviceToken)'
+		 4] Rename 'subscribeToChannelsInBackground(ArrayList<String> installationChannels)' method to 'subscribeToChannels(ArrayList<String> installationChannels)'
+		 5] Rename 'unsubscribeToChannelsInBackground(ArrayList<String> installationChannels)' method to ''unsubscribeToChannels(ArrayList<String> installationChannels)''
+
+	*BuiltObject
+		 1] Rename 'saveInBackground()' method to 'save()'
+		 2] Rename 'saveEventuallyInBackground()' method to 'saveEventually()'
+		 3] Rename 'saveAsDraftInBackground()' method to 'saveAsDraft()'
+		 4] Rename 'saveAsDraftEventuallyInBackground()' method to 'saveAsDraftEventually()'
+		 5] Rename 'fetchInBackground()' method to 'fetch()'
+		 6] Rename 'destroyInBackground()' method to 'destroy()'
+		 7] Rename 'destroyEventuallyInBackground()' method to 'destroyEventually()'
+
+	*BuiltUpload
+		 1] Rename 'destroyInBackground()' method to 'destroy()'
+		 2] Rename 'fetchInBackground()' method to 'fetch()'
+		 3] Rename 'fetchAllInBackground()' method to 'fetchAll()'
+		 4] Rename 'fetchImagesInBackground()' method to 'fetchImages()'
+		 5] Rename 'fetchVideosInBackground()' method to 'fetchVideos()'
+		 6] Rename 'fetchAllTagsInBackground()'	method to 'fetchAllTags()'
+
+	*BuiltUser
+		 1] Rename 'destroyEventuallyInBackground()' method to 'destroyEventually()'
+ 		 2] Rename 'destroyInBackground()' method to 'destroy()'
+		 5] Rename 'loginInBackground(String email, String password)' method to 'login(String email, String password)'
+		 6] Rename 'loginWithGoogleAccessTokenInBackground(String accessToken)' method to 'loginWithGoogleAccessToken(String accessToken)'
+		 7] Rename 'loginWithFacebookAccessTokenInBackground(String accessToken)' method to 'loginWithFacebookAccessToken(String accessToken)'
+		 8] Rename 'loginWithTwitterAccessTokenInBackground(String accessToken, String accessTokenSecret, String consumerKey, String consumerSecret)' method to 'loginWithTwitterAccessToken(String accessToken, String accessTokenSecret, String consumerKey, String consumerSecret)'
+		 9] Rename 'refreshUserInfoInBackground()' method to 'refreshUserInfo()'
+		10] Rename 'fetchInBackground()' method to 'fetch()'
+		11] Rename 'saveInBackground()' method to 'save()'
+		12] Rename 'registerInBackground()' method to 'register()'
+		13] Rename 'updateUserInfoInBackground()' method to 'updateUserInfo()'
+		14] Rename 'logoutInBackground()' method to 'logout()'
+		15] Rename 'deactivateInBackground()' method to 'deactivate()'
+		16] Rename 'activateUserInBackground(String userUid, String activationToken)' method to 'activateUser(String userUid, String activationToken)'
+		17] Rename 'fetchUserUidForEmailInBackground(String emailId)' method to 'fetchUserUidForEmail(String emailId)'
+		18] Rename 'fetchUserUidForGoogleEmailInBackground(String emailId)' method to 'fetchUserUidForGoogleEmail(String emailId)'
+		19] Rename 'fetchUserUidForFacebookInBackground(String userId)' method to 'fetchUserUidForFacebook(String userId)'
+		20] Rename 'fetchUserUidForTwitterInBackground(String userId)' method to 'fetchUserUidForTwitter(String userId)'
+		21] Rename 'forgotPasswordInBackground(String emailId)' method to 'forgotPassword(String emailId)'
+
+	*BuiltExtension
+		 1] Rename 'executeInBackground(String functionName, HashMap<String, Object> properties)' method to 'execute(String functionName, HashMap<String, Object> properties)'
+		 2] Rename 'executeInBackground(String functionName)' method to 'execute(String functionName)'
+
+	*BuiltQuery
+		 7] Rename 'execInBackground()' method to 'exec()'
+		 8] Rename 'fetchAllTagsInBackground()'	method to 'fetchAllTags()'
+
+
+
+API Deprecation:
+
+	* Removed deprecated class 'BuiltSynchronousResponse'
+	* Removed deprecated class 'BuiltNotification'
+
+	*Built
+		 1] Removed deprecated method 'application(Context context, String apiKey, String host)'
+		 2] Removed deprecated method 'application(Context context, String apiKey, String host, boolean isSSL)'
+
+	*BuiltApplication
+		 1] Removed deprecated method 'setURL(String hostName, boolean isSSL)'
+		 2] Removed deprecated method 'setRealTimeURL(String hostName, boolean isSSL)'
+		 3] Removed deprecated method 'getURL()'
+		 4] Removed deprecated method 'getRealTimeURL()'
+		 5] Removed deprecated method 'getRealTimePort()'
+		 6] Removed deprecated method 'setRealTimePort(int port)'
+		 7] Removed deprecated method 'getVersion()'
+		 8] Removed deprecated method 'setVersion(String version)'
+		 9] Removed deprecated method 'notification()'
+		10] Removed deprecated method 'fetchClassesSchema()'
+		11] Removed deprecated method 'fetchLastActivities()'
+		12] Removed deprecated method 'fetchInfo()'
+
+	*BuiltClass
+		 1] Removed deprecated method 'fetchSchema()'
+
+	*BuiltInstallation
+		 1] Removed deprecated method 'createInstallation(String deviceToken, ArrayList<String> installationChannels)'
+		 2] Removed deprecated method 'destroy()'
+		 3] Removed deprecated method 'updateInstallation(String deviceToken)'
+		 4] Removed deprecated method 'subscribeToChannels(ArrayList<String> installationChannels)'
+		 5] Removed deprecated method 'unsubscribeToChannels(ArrayList<String> installationChannels)'
+
+	*BuiltObject
+		 1] Removed deprecated method 'pushValue(String key, Object value, int index)'
+		 2] Removed deprecated method 'pullValueAtIndex(String key, int index)'
+		 3] Removed deprecated method 'save()'
+		 4] Removed deprecated method 'saveEventually()'
+		 5] Removed deprecated method 'saveAsDraft()'
+		 6] Removed deprecated method 'saveAsDraftEventually()'
+		 7] Removed deprecated method 'fetch()'
+		 8] Removed deprecated method 'destroy()'
+		 9] Removed deprecated method 'destroyEventually()'
+		10] Removed deprecated method 'multiply(String key, int value)'
+		11] Removed deprecated method 'divide(String key, int value)'
+		12] Removed deprecated method 'upsertForReference(String key, String referenceKey, Object referenceValue, HashMap<String, Object> newFieldValue)'
+		13] Removed deprecated method 'setReferenceWithObject(String key, Object value)'
+		14] Removed deprecated method 'setReference(String key, Object value)'
+
+	*BuiltRole
+		 1] Removed deprecated method 'getRolesQuery()'
+
+	*BuiltUpload
+		 1] Removed deprecated method 'destroy()'
+		 2] Removed deprecated method 'fetch()'
+		 3] Removed deprecated method 'fetchAll()'
+		 4] Removed deprecated method 'fetchImages()'
+		 5] Removed deprecated method 'fetchVideos()'
+		 6] Removed deprecated method 'fetchAllTags()'
+
+	*BuiltUser
+		 1] Removed deprecated method 'destroyEventually()'
+ 		 2] Removed deprecated method 'destroy()'
+		 3] Removed deprecated method 'requestPresence(BuiltResultCallBack callBack)'
+		 4] Removed deprecated method 'getUsersQuery()'
+		 5] Removed deprecated method 'login(String email, String password)'
+		 6] Removed deprecated method 'loginWithGoogleAccessToken(String accessToken)'
+		 7] Removed deprecated method 'loginWithFacebookAccessToken(String accessToken)'
+		 8] Removed deprecated method 'loginWithTwitterAccessToken(String accessToken, String accessTokenSecret, String consumerKey, String consumerSecret)'
+		 9] Removed deprecated method 'refreshUserInfo()'
+		10] Removed deprecated method 'fetch()'
+		11] Removed deprecated method 'save()'
+		12] Removed deprecated method 'register()'
+		13] Removed deprecated method 'updateUserInfo()'
+		14] Removed deprecated method 'logout()'
+		15] Removed deprecated method 'deactivate()'
+		16] Removed deprecated method 'activateUser(String userUid, String activationToken)'
+		17] Removed deprecated method 'fetchUserUidForEmail(String emailId)'
+		18] Removed deprecated method 'fetchUserUidForGoogleEmail(String emailId)'
+		19] Removed deprecated method 'fetchUserUidForFacebook(String userId)'
+		20] Removed deprecated method 'fetchUserUidForTwitter(String userId)'
+		21] Removed deprecated method 'forgotPassword(String emailId)'
+
+	*BuiltExtension
+		 1] Removed deprecated method 'execute(String functionName, HashMap<String, Object> properties)'
+		 2] Removed deprecated method 'execute(String functionName)'
+
+	*BuiltQuery
+		 1] Removed deprecated method 'afterUid(String uid)'
+		 2] Removed deprecated method 'beforeUid(String uid)'
+		 3] Removed deprecated method 'except(ArrayList<String> fieldUid)'
+		 4] Removed deprecated method 'onlyWithReferenceUid(ArrayList<String> fieldUid, String referenceFieldUid)'
+		 5] Removed deprecated method 'only(ArrayList<String> fieldUid)'
+		 6] Removed deprecated method 'includeReference(ArrayList<String> keys)'
+		 7] Removed deprecated method 'exec()'
+		 8] Removed deprecated method 'fetchAllTags()'
+
+	*BuiltGroup
+		 1] Removed deprecated method 'pushValue(String key, Object value, int index)'
+		 2] Removed deprecated method 'pullValueAtIndex(String key, int index)'
+
+	*BuiltPresence
+		 1] Removed deprecated method 'removeFromWhiteList(Object user)'
+
+	*BuiltImageView
+		 1] Removed deprectated method 'setApplicationKey(Context context, String applicationKey)'
+
+	*BuiltUIListViewController
+		 1] Removed deprecated method 'BuiltUIListViewController(Context context, String app_api_key, String classUid)'
+
+	*BuiltUILoginController
+		 1] Removed deprecated method 'setApplicationKey(String applicationKey)'
+
+	*BuiltUISignUpController
+		 1] Removed deprecated method 'setApplicationKey(String applicationKey)'
+
+Bug Fixes:
+
+	*Improvements in method info of BuiltQuery and BuiltInstallation classes.
+
+
+
+
+
+
+====================================================================================
 Version: 2.2.1
 Date: 14-June-2016
 
