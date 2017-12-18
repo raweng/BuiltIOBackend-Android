@@ -1,4 +1,4 @@
-built.io
+Built.io
 =========
 
 <h4>built.io is a backend for your app.</h4>
@@ -6,7 +6,7 @@ built.io
 
 This means that you only concentrate on the client side of development. And our SDKs make it easy to develop on your client!
 
-The way built.io works is to connect your app with our servers, using a SDK or REST APIs. You can then use built.io as your datastore, rely on it for your data validation and security needs, upload files, push notifications...in short, you can do everything that you used to rely on a backend for.
+The way Built.io works is to connect your app with our servers, using a SDK or REST APIs. You can then use Built.io as your datastore, rely on it for your data validation and security needs, upload files, push notifications...in short, you can do everything that you used to rely on a backend for.
 
 We feature a complete set of functionality, such as:
 
@@ -19,12 +19,12 @@ We feature a complete set of functionality, such as:
 - Push Notifications to iOS and Android devices  
 
 <h4>Note:</h4>
-- built.io-2.0.0.aar contains built.io SDK. 
+- Built.io-2.1.0.aar contains built.io SDK. 
 
 Version
 ----
 
-2.0.0
+2.1.0
 
 
 Installation
@@ -34,7 +34,7 @@ Installation can be done in two ways.
 
 #####If user want to use built.io SDK without realtime.
 
- 1. Copy built.io-xxxx.aar to your project's libs folder.
+ 1. Copy Built.io-xxx.aar to your project's libs folder.
 		  
  2. Add dependency code in your build.gradle file. 
         repositories {
@@ -42,13 +42,13 @@ Installation can be done in two ways.
     	        dirs 'libs'
             }
         }
-        dependencies {compile 'com.raweng.built:built.io-x.x.x:x.x.x@aar'}
+        dependencies {compile 'com.raweng.built:Built.io-x.x.x:x.x.x@aar'}
   
 ####(OR)
     
 #####If user want to use built.io SDK with realtime.
 
- 1. Copy built.io-realtime-xxx.aar to your project's libs folder.
+ 1. Copy Built.io-realtime-xxx.aar to your project's libs folder.
 		  
  2. Add dependency code in your build.gradle file. 
         repositories {
@@ -56,7 +56,7 @@ Installation can be done in two ways.
     	        dirs 'libs'
             }
         }
-        dependencies {compile 'com.raweng.built:built.io-realtime-x.x.x:x.x.x@aar'}
+        dependencies {compile 'com.raweng.built:Built.io-realtime-x.x.x:x.x.x@aar'}
  
     
 

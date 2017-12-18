@@ -1,3 +1,139 @@
+Version: 2.1.0
+Date: 21-July-2015
+
+New Features:
+
+
+	*Built
+		1] Added class method 'application(Context, String, String)'
+		2] Added class method 'application(Context, String, String, boolean)'
+		3] Added class method 'disableUserMetrics()'
+		4] Added class method 'isNetworkAvailable(Context, BuiltNetworkAvailableCallback)'
+
+	*BuiltRole:
+		1] Added methods 'addUsers(String[])' and 'addUsers(ArrayList<BuiltUser>)'
+		2] Added methods 'addRoles(String[])' and 'addRoles(ArrayList<BuiltRole>)'
+		3] Added method  'removeUsers(String[])'
+		4] Added method  'removeRoles(String[])'
+
+	*BuiltACL:
+		1] Added method 'setAnonymousReadAccess(boolean)'
+		2] Added method 'setAnonymousWriteAccess(boolean)'
+		3] Added method 'setAnonymousDeleteAccess(boolean)'
+		4] Added method 'getAnonymousReadAccess()'
+		5] Added method 'getAnonymousWriteAccess()'
+		6] Added method 'getAnonymousDeleteAccess()'
+
+	*BuiltApplication:
+		1] Added method  'trackAnonymously(boolean)'
+		2] Added methods 'fetchClassesSchema()' and 'fetchClassesSchemaInBackground(BuiltFetchSchemaCallback)'
+
+
+	*BuiltAnalytics:
+		1] Added method 'setDynamicProperties(BuiltDynamicPropertiesCallback)'
+
+	*BuiltObject:
+		1] Added method  'addUpsertForReference(String, HashMap<String, Object>, HashMap<String, Object>)'
+		2] Added methods 'addGroup(BuiltGroup)' and 'addGroup(BuiltGroupMultiple)'
+		3] Added methods 'includeReference(String)  and includeReference(String[])
+		4] Added methods 'setReferenceWithObject(String, BuiltObject)' and 'setReferenceWithObject(String, ArrayList<BuiltObject>)'
+		5] Added methods 'setReference(String key, String value)' and 'setReference(String key, String[] value)'
+
+	*BuiltQuery:
+		1] Added method  'setRawQuery(String)'
+		2] Added method  'only(String[])'
+		3] Added methods 'includeReference(String)' and 'includeReference(String[])'
+
+	*BuiltPresence:
+		1] Added methods 'addInWhiteList(String[])' and 'addInWhiteList(ArrayList<BuiltUser>)'
+		2] Added methods 'removeFromWhiteList(String)' and 'removeFromWhiteList(BuiltUser)'
+
+	*BuiltGroup:
+		1] new class introduced
+
+	*BuiltGroupMultiple:
+		1] new class introduced
+
+	*BuiltImageView
+		1] Added method 'setApplication(Context, BuiltApplication)'
+
+	*BuiltLoginUIController
+		1] Added method 'setApplication(BuiltApplication)'
+		2] Made layout variables public for edit
+
+	*BuiltSignUpUIController
+		1] Added method 'setApplication(BuiltApplication)'
+		2] Made layout variables public for edit
+
+	*BuiltUIListViewController
+		1] Added constructor 'BuiltUIListViewController(Context, BuiltClass)' and 'BuiltUIListViewController(Context, BuiltApplication, String)'
+
+
+
+
+API Modifications:
+
+
+	*BuiltUser
+		1] renamed method 'requestPresence(BuiltResultCallBack)' to 'requestPresenceAccess(BuiltResultCallBack)'
+
+	*BuiltRole
+		1] removed method 'addUser(ArrayList<Object>)'
+		2] removed method 'addRole(ArrayList<Object>)'
+
+
+
+
+API Deprecation:
+
+
+	*BuiltApplication:
+		1] Deprecated method 'setURL(String, boolean)'
+
+	*BuiltObject:
+		1] Deprecated method 'upsertForReference(String, String, Object, HashMap<java.lang.String, java.lang.Object>)'
+		2] Deprecated method 'setReference(String, Object)'
+		3] Deprecated method 'setReferenceWithObject(String, Object)'
+
+	*BuiltUser:
+		1] Deprecated method 'requestPresence(BuiltResultCallBack)'
+		2] Deprecated method 'getUsersQuery()'
+
+	*BuiltQuery:
+		1] Deprecated method 'includeReference(ArrayList)'
+		2] Deprecated method 'only(ArrayList)'
+
+	*BuiltRole
+		1] Deprecated method 'getRolesQuery()'
+
+	*BuiltPresence:
+		1] Deprecated method 'removeFromWhiteList(Object)'
+
+	*BuiltImageView:
+		1] Deprecated method 'setApplicationKey(Context, String)'
+
+	*BuiltUISignUpController:
+		1] Deprecated method 'setApplicationKey(String)'
+
+	*BuiltUILoginController
+		1] Deprecated method 'setApplicationKey(String)'
+
+	*BuiltUIListViewController
+		1] Deprecated constructor 'BuiltUIListViewController(Context, String, String'
+
+
+
+
+Bug Fixes:
+
+	*fixed issues of api docs snippets.
+
+	*fixed issue regarding UIControllers unable to point different built io backend servers.
+
+
+
+
+====================================================================================
 Version: 2.0.0
 Date: 11-May-2015
 

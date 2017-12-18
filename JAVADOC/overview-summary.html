@@ -237,10 +237,12 @@ Both the functionalities are available for the user in the BuiltApplication, Bui
 <p><ol><li>If you want to set permissions for BuiltObject, BuiltFile, BuiltInstallation, and BuiltRole, it can be done using the BuiltACL class.</p>
 <p>Let&#39;s say, you want to set read permission for BuiltFile for all users. You can do this by following the steps given below.</p>
 <ol><li><p>Create an ACL object with the intended permission.</p></li>
-<pre><code><font size="2">    BuiltACL acl = BuiltACL();
+<pre><code><font size="2">    // 'blt5d4sample2633b' is a dummy Application API key
+    BuiltApplication builtApplication = Built.application(context, &quot;blt5d4sample2633b&quot;);
+    BuiltACL acl = builtApplication.acl();
     acl.setPublicReadAccess(true); // set read permission for all.</font>
 </code></pre><li><p>Create a BuiltUpload object and apply ACL to it.</p></li>
-<pre><code><font size="2">    BuiltUpload builtUpload = Built.application(context, &quot;api_key&quot;).upload() 
+<pre><code><font size="2">    BuiltUpload builtUpload = Built.application(context, &quot;blt5d4sample2633b&quot;).upload() 
     builtUpload.setACL(acl);   //Set acl object.</font></ol>
 </code></pre></li></ol></p>
 
@@ -356,7 +358,7 @@ Both the functionalities are available for the user in the BuiltApplication, Bui
 <pre><code> 
    BuiltUser userObject = builtApplication.getCurrentUser();
    BuiltPresence presenceObject = userObject.getPresence();
-   presenceObject.setPrivacyStatus(BuiltPresence.PrivacyType.PUBLIC);
+   presenceObject.setPublic(true);
 
    presenceObject.save(new BuiltResultCallBack() {
        @Override
