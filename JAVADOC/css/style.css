@@ -1,0 +1,50 @@
+body {
+	  background: #F0F0F0;
+}
+
+.main-container {
+	background: #FCFCFC;
+	border: 1px solid #EAEAEA;
+	border-width: 0 1px;
+	max-width: 1000px;
+}
+
+.main-container.with-ios-header {
+	margin-top: 35px;
+}
+
+.ios-header {
+	background: url("../images/library_background.png") repeat-x 0 0 #485E78;
+	background-color: #CCC;
+	min-height: 35px;
+	height: 35px;
+	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
+	font-size: 15px;
+}
+
+.ios-header h1 {
+	font-size: 105%;
+	font-weight: normal;
+	margin: 0;
+	padding: 3px 0 2px;
+	text-align: center;
+	text-shadow: 0 1px 0 #D5D5D5;
+	white-space: nowrap;
+}
+
+.ios-header .dev-home {
+	color: #92979E;
+	right: 15px;
+	top: 8px;
+	position: absolute;
+	line-height: 1;
+}
+
+.ios-header h1 a {
+	color: #FFF;
+	margin-left: 15px;
+	text-shadow: 0 -1px 0 #485E78;
+	top: 8px;
+	left: 0;
+	position: absolute;
+}
