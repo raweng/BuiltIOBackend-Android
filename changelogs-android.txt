@@ -1,3 +1,42 @@
+Version: 4.0.0
+Date: 14–December-2017
+
+Note :
+- Updating SDK version from 3.X.X to 4.X.X will invalid the previous login session. Please refer docs link for more details.
+- Points to Built.io Backend API version v4
+
+New Features:
+
+	*BuiltUser
+		1] Added 'loginWithSSO(BuiltResultCallBack callBack)' method.
+		2] Added 'refreshAccessToken(BuiltResultCallBack callback)' method.
+		3] Added 'refreshAccessToken(String refToken, BuiltResultCallBack callback)' method.
+		4] Added 'getAccessToken()' method.
+		5] Added 'getRefreshToken()' method.
+
+	*BuiltConfig
+		1] Added 'persistRefreshToken(boolean isPersist)' method.
+		2] Added 'isPersistRefreshToken()' method.
+
+
+API Modifications:
+
+	*None.
+
+
+API Deprecation:
+
+	*BuiltUser
+		1] Removed 'getAuthToken()' method.
+
+Bug Fixes:
+
+	*None.
+
+
+
+
+====================================================================================
 Version: 3.2.0
 Date: 23-November-2017
 
