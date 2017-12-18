@@ -358,7 +358,7 @@ Both the functionalities are available for the user in the BuiltApplication, Bui
 <pre><code> 
    BuiltUser userObject = builtApplication.getCurrentUser();
    BuiltPresence presenceObject = userObject.getPresence();
-   presenceObject.setPublic(true);
+   presenceObject.setPrivacyStatus(BuiltPresence.PrivacyType.PUBLIC);
 
    presenceObject.save(new BuiltResultCallBack() {
        @Override

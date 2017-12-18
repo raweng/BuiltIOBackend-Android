@@ -1,3 +1,45 @@
+Version: 2.1.1
+Date: 19-August-2015
+
+
+New Features:
+
+	*BuiltObject
+		 1] Added method 'except(String[])'
+		 2] Added method 'only(String[])'
+		 3] Added method 'onlyWithReferenceUid(String[], String)'
+		 3] Added method 'exceptWithReferenceUid(String[], String)'
+
+	*BuiltQuery
+		 1] Added method 'except(String[])'
+		 2] Added method 'onlyWithReferenceUid(String[], String)'
+		 3] Added method 'exceptWithReferenceUid(String[], String)'
+
+
+
+API Modifications:
+
+	*None
+
+
+
+
+API Deprecation:
+
+	*BuiltQuery
+		 1] Deprecated method 'except(ArrayList<String>)'
+		 2] Deprecated method 'onlyWithReferenceUid(ArrayList<String>, String)'
+
+
+
+Bug Fixes:
+
+	*fixed issues of api docs snippets of BuiltQuery.
+
+
+
+
+====================================================================================
 Version: 2.1.0
 Date: 21-July-2015
 
