@@ -403,7 +403,7 @@ Table styles
     float:left;
     background-color:#F8981D;
     border: none;
-    height:16px;
+    height: 25px;
 }
 .memberSummary caption span.activeTableTab span {
     white-space:nowrap;

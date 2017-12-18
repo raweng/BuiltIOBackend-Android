@@ -1,3 +1,59 @@
+Version: 3.1.0
+Date: 24-November-2016
+
+
+New Features:
+
+	*Added BuiltUserRoleMapper class.
+
+	*BuiltApplication
+		1] Added 'userRoleMapper()' method.
+		2] Added 'userRoleMapper(String uid)' method.
+
+	*BuiltObject
+		1] Added 'addUpsertForReferences(String key, HashMap<String, Object> conditionFieldValues, HashMap<String, Object> newFieldValues)' method.
+
+    *BuiltRole
+    	1] Added 'setUsersWithQuery(BuiltQuery query)' method.
+
+   	*BuiltUser
+   		1] Added 'getLastLoginAt()' method.
+
+    *BuiltGroup
+    	1] Added 'upsertForReferences(String key, HashMap<String, Object> conditionFieldValues, HashMap<String, Object> newFieldValues)' method.
+
+
+API Modifications:
+
+	*None
+
+API Deprecation:
+
+	*BuiltPresence
+		1] Removed 'addInWhiteList(String[] userUidList)' method.
+		2] Removed 'addInWhiteList(ArrayList<BuiltUser> userUidList)' method.
+		3] Removed 'removeFromWhiteList(String userUid)' method.
+		4] Removed 'removeFromWhiteList(BuiltUser user)' method.
+		5] Removed 'getCustomProperties()' method.
+		6] Removed 'setCustomProperties(HashMap<String, Object> hashMap)' method.
+		7] Removed 'getStatusMessage()' method.
+		8] Removed 'setStatusMessage(String message)' method.
+		9] Removed 'isPublic()' method.
+	   10] Removed 'setPublic(boolean privacyType)' method.
+	   11] Removed 'getRequests()' method.
+	   12] Removed 'getWhiteListUsers()' method.
+	   13] Removed 'acceptRequests()' method.
+
+Bug Fixes:
+
+	*None
+
+
+
+
+
+
+====================================================================================
 Version: 3.0.0
 Date: 26-October-2016
 
