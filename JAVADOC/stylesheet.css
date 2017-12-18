@@ -2,18 +2,6 @@
 /*
 Overall document style
 */
-
-/***************************** Boot Strap code ***********************/
-
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-/*body {
-  margin: 0;
-}*/
 body {
     background-color:#ffffff;
     color:#353833;
@@ -21,15 +9,62 @@ body {
     font-size:76%;
     margin:0;
 }
-
-.android-docs .topNav,
-.android-docs .subNav {
-float: none;
+a:link, a:visited {
+    text-decoration:none;
+    color:#4c6b87;
 }
-
-/***************************** Actual one ***************************/
-
-
+a:hover, a:focus {
+    text-decoration:none;
+    color:#bb7a2a;
+}
+a:active {
+    text-decoration:none;
+    color:#4c6b87;
+}
+a[name] {
+    color:#353833;
+}
+a[name]:hover {
+    text-decoration:none;
+    color:#353833;
+}
+pre {
+    font-size:1.3em;
+}
+h1 {
+    font-size:1.8em;
+}
+h2 {
+    font-size:1.5em;
+}
+h3 {
+    font-size:1.4em;
+}
+h4 {
+    font-size:1.3em;
+}
+h5 {
+    font-size:1.2em;
+}
+h6 {
+    font-size:1.1em;
+}
+ul {
+    list-style-type:disc;
+}
+code, tt {
+    font-size:1.2em;
+}
+dt code {
+    font-size:1.2em;
+}
+table tr td dt code {
+    font-size:1.2em;
+    vertical-align:top;
+}
+sup {
+    font-size:.6em;
+}
 /*
 Document title and Copyright styles
 */
@@ -339,7 +374,7 @@ caption a:link, caption a:hover, caption a:active, caption a:visited {
 }
 .overviewSummary caption span, .packageSummary caption span, .contentContainer ul.blockList li.blockList caption span, .summary caption span, .classUseContainer caption span, .constantValuesContainer caption span {
     white-space:nowrap;
-    padding-top:2px;
+    padding-top:8px;
     padding-left:8px;
     display:block;
     float:left;
@@ -437,286 +472,3 @@ h1.hidden {
 .strong {
     font-weight:bold;
 }
-
-
-.main-container {
-    background: #FCFCFC;
-    border: 1px solid #EAEAEA;
-    border-width: 0 1px;
-    max-width: 1000px;
-}
-
-.com { color: #93a1a1; }
-.lit { color: #195f91; }
-.pun, .opn, .clo { color: #93a1a1; }
-.fun { color: #dc322f; }
-.str, .atv { color: #D14; }
-.kwd, .prettyprint .tag { color: #1e347b; }
-.typ, .atn, .dec, .var { color: teal; }
-.pln { color: #48484c; }
-
-.prettyprint {
-  padding: 8px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-}
-.prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-}
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-  /*margin: 0 0 0 33px;  IE indents via margin-left */
-}
-ol.linenums li {
-  padding-left: 12px;
-  color: #bebec5;
-  line-height: 20px;
-  text-shadow: 0 1px 0 #fff;
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
-  display: block;
-}
-
-audio,canvas,progress,video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-[hidden],template {
-  display: none;
-}
-
-a {
-  background-color: transparent;
-}
-
-a:active,a:hover {
-  text-decoration:none;
-  color:#4c6b87;
-  outline: 0;
-}
-
-a:link, a:visited {
-    text-decoration:none;
-    color:#4c6b87;
-}
-a:hover, a:focus {
-    text-decoration:none;
-    color:#bb7a2a;
-}
-
-a[name] {
-    text-decoration:none;
-    color:#353833;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-b,strong {
-  font-weight: 700;
-}
-
-dfn {
-  font-style: italic;
-}
-
-pre {
-    font-size:1.3em;
-}
-h1 {
-    margin: .67em 0;
-  font-size: 2em;
-}
-h2 {
-    font-size:1.5em;
-}
-h3 {
-    font-size:1.4em;
-}
-h4 {
-    font-size:1.3em;
-}
-h5 {
-    font-size:1.2em;
-}
-h6 {
-    font-size:1.1em;
-}
-
-ul {
-    list-style-type:disc;
-}
-code, tt {
-    font-size:1.2em;
-}
-dt code {
-    font-size:1.2em;
-}
-table tr td dt code {
-    font-size:1.2em;
-    vertical-align:top;
-}
-
-mark {
-  color: #000;
-  background: #ff0;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -.5em;
-}
-
-sub {
-  bottom: -.25em;
-}
-
-img {
-  border: 0;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  height: 0;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-pre {
-  overflow: auto;
-}
-
-code,kbd,pre,samp {
-  font-family: monospace,monospace;
-  font-size: 1em;
-}
-
-button,input,optgroup,select,textarea {
-  margin: 0;
-  font: inherit;
-  color: inherit;
-}
-
-button {
-  overflow: visible;
-}
-
-button,select {
-  text-transform: none;
-}
-
-button,html input[type=button],input[type=reset],input[type=submit] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-
-button[disabled],html input[disabled] {
-  cursor: default;
-}
-
-button::-moz-focus-inner,input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-input {
-  line-height: normal;
-}
-
-input[type=checkbox],input[type=radio] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-input[type=search] {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  -webkit-appearance: textfield;
-}
-
-input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-fieldset {
-  padding: .35em .625em .75em;
-  margin: 0 2px;
-  border: 1px solid silver;
-}
-
-legend {
-  padding: 0;
-  border: 0;
-}
-
-textarea {
-  overflow: auto;
-}
-
-optgroup {
-  font-weight: 700;
-}
-
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-td,th {
-  padding: 0;
-}/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */@media print {
-  *,:after,:before {
-    color: #000!important;
-    text-shadow: none!important;
-    background: 0 0!important;
-    -webkit-box-shadow: none!important;
-    box-shadow: none!important;
-  }
-
-/*============================================================
-                        Android
-===========================================================*/
-
-/*
-Overriding Android Java Docs styles
-*/
-
-
-
-

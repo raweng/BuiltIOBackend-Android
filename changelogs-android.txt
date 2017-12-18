@@ -1,3 +1,87 @@
+Version: 2.2.0
+Date: 18-April-2016
+
+
+New Features:
+
+	* Added class 'BuiltConfig'
+	* Added class 'BuiltSyncResult'
+	* Added class 'BuiltKeyStore'
+
+	*Built
+		 1] Added method 'application(Context context, java.lang.String apiKey, BuiltConfig config)'
+
+	*BuiltApplication
+		 1] Added method 'sync(BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
+		 2] Added method 'sync(java.lang.Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
+		 3] Added method 'syncExcept(java.lang.String[] exceptClassUid, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
+		 4] Added method 'syncExcept(String[] exceptClassUid, Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
+		 5] Added method 'syncOnly(java.lang.String[] onlyClassUid, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
+		 6] Added method 'syncOnly(String[] onlyClassUid, Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
+		 7] Added method 'keyStore()'
+		 8] Added method 'clearOfflineData()'
+		 9] Added method 'clearOfflineData(java.lang.String[] exceptClassUid, java.lang.String[] onlyClassUid)'
+
+	*BuiltObject
+		 1] Added method 'offline()'
+
+	*BuiltQuery
+		 1] Added method 'offline()'
+
+	*BuiltConstant
+		 1] Added Constant 'KEY_CREATED'
+		 2] Added Constant 'KEY_DELETED'
+		 3] Added Constant 'KEY_UPDATED'
+		 4] Added Constant 'KEY_ERROR'
+
+
+
+API Modifications:
+
+	*None
+
+
+
+API Deprecation:
+
+	*Built
+		 1] Deprecated method 'application(Context context, String apiKey, String host)'
+		 2] Deprecated method 'application(Context context, String apiKey, String host, boolean isSSL)'
+		 3] Removed method 'disableUserMetrics()'
+
+	*BuiltApplication
+		 1] Deprecated method 'getRealTimePort()'
+		 2] Deprecated method 'getRealTimeURL()'
+		 3] Deprecated method 'getURL()'
+		 4] Deprecated method 'setRealTimePort(int port)'
+		 5] Deprecated method 'setRealTimeURL(java.lang.String hostName, boolean isSSL)'
+		 6] Deprecated method 'setURL(java.lang.String hostName, boolean isSSL)'
+		 7] Deprecated method 'setVersion(java.lang.String version)'
+		 8] Deprecated method 'notification()'
+
+	*BuiltObject
+		 1] Deprecated method 'multiply(java.lang.String key, int value)'
+		 2] Deprecated method 'divide(java.lang.String key, int value)'
+
+	*BuiltQuery
+		 1] Deprecated method 'afterUid(java.lang.String uid)'
+		 2] Deprecated method 'beforeUid(java.lang.String uid)'
+
+    *Deprecated class BuiltSynchronousResponse
+
+    *Deprecated class BuiltNotification
+
+
+
+Bug Fixes:
+
+	*None
+
+
+
+
+
+====================================================================================
 Version: 2.1.2
 Date: 02-September-2015
 
