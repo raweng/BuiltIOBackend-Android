@@ -19,12 +19,12 @@ We feature a complete set of functionality, such as:
 - Push Notifications to iOS and Android devices  
 
 <h4>Note:</h4>
-- Built.io-4.0.0.aar contains built.io SDK. 
+- Built.io-4.1.0.aar contains built.io SDK.
 
 Version
 ----
 
-4.0.0
+4.1.0
 
 
 Installation
