@@ -1,3 +1,30 @@
+Version: 4.2.1
+Date: 26-April-2018
+
+
+New Features:
+
+	*None.
+
+API Modifications:
+	
+	*None.
+	
+
+API Deprecation:
+
+	*None.
+
+		
+Bug Fixes:
+	
+	*fixed file update issue in BuiltFile class.
+
+
+
+
+====================================================================================
+
 Version: 4.2.0
 Date: 01-March-2018
 
@@ -8,13 +35,13 @@ New Features:
 		1] Added 'setExtensionKey(String extensionKey)' method.
 		2] Added 'extension()' method.
 		3] Added 'extension(String extensionKey)' method.
-
+	
 	*BuiltClass
 		1] Added 'setExtensionKey(String extensionKey)' method.
 
 	*BuiltConfig
 		1] Added 'setExtensionKey(String extensionKey)' method.
-
+	
 	*BuiltObject
 		1] Added 'setExtensionKey(String extensionKey)' method.
 
@@ -27,24 +54,24 @@ New Features:
 		3] Added 'setRequestMethod(RequestMethod reqMethod)' method.
 		4] Added 'setRequestHeader(WeakHashMap<String, Object> header)' method.
 		5] Added 'setRequestParameter(JSONObject reqJSON)' method.
-		6] Added 'setRequestParameter(WeakHashMap<String, Object> reqParameter)' method.
+		6] Added 'setRequestParameter(WeakHashMap<String, Object> reqParameter)' method.		
 		7] Added 'execute(BuiltExtensionCallback callback)' method.
-		8] Added 'executeFunction(BuiltExtensionCallback callback)' method.
+		8] Added 'executeFunction(BuiltExtensionCallback callback)' method.	
 
 
 API Modifications:
-
+	
 	*None.
-
+	
 
 API Deprecation:
 
 	*BuiltExtension
 		1] Removed 'execute(String functionName, HashMap<String, Object> properties, BuiltExtensionCallback callback)' method.
 		2] Removed 'execute(String functionName, BuiltExtensionCallback callback)' method.
-
+		
 Bug Fixes:
-
+	
 	*None.
 
 
@@ -64,20 +91,20 @@ New Features:
 
 	*BuiltQuery
 		1] Added 'exportToExcel(String folderPath, BuiltUploadDownloadCallback callback)' method.
-		2] Added 'exportToExcel(BuiltUploadDownloadCallback callback)' method.
+		2] Added 'exportToExcel(BuiltUploadDownloadCallback callback)' method.			
 
 
 API Modifications:
-
+	
 	*None.
-
+	
 
 API Deprecation:
 
 	*None
-
+		
 Bug Fixes:
-
+	
 	*None.
 
 
@@ -97,7 +124,7 @@ New Features:
 
 	*BuiltUser
 		1] Added 'loginWithSSO(BuiltResultCallBack callBack)' method.
-		2] Added 'refreshAccessToken(BuiltResultCallBack callback)' method.
+		2] Added 'refreshAccessToken(BuiltResultCallBack callback)' method.			
 		3] Added 'refreshAccessToken(String refToken, BuiltResultCallBack callback)' method.
 		4] Added 'getAccessToken()' method.
 		5] Added 'getRefreshToken()' method.
@@ -108,17 +135,17 @@ New Features:
 
 
 API Modifications:
-
+	
 	*None.
-
+	
 
 API Deprecation:
 
 	*BuiltUser
 		1] Removed 'getAuthToken()' method.
-
+		
 Bug Fixes:
-
+	
 	*None.
 
 
@@ -134,22 +161,22 @@ Date: 23-November-2017
 New Features:
 
 	*BuiltUser
-		1] Added 'loginWithUsername(String userName, String password, BuiltResultCallBack callback)' method.
+		1] Added 'loginWithUsername(String userName, String password, BuiltResultCallBack callback)' method.	
 
 
 API Modifications:
-
+	
 	*BuiltUser
 		1] Rename 'setUserName()' method to 'setUsername()'
 		2] Rename 'getUserName()' method to 'getUsername()'
-
+	
 
 API Deprecation:
 
 	*None
-
+		
 Bug Fixes:
-
+	
 	*None.
 
 
@@ -164,19 +191,19 @@ Date: 13-November-2017
 
 New Features:
 
-	*None
+	*None	
 
 
 API Modifications:
-
-	*None
+	
+	*None	
 
 API Deprecation:
 
 	*None
-
+		
 Bug Fixes:
-
+	
 	*Image upload issue fixed.
 
 
@@ -190,19 +217,19 @@ Date: 09-February-2017
 
 New Features:
 
-	*None
+	*None	
 
 
 API Modifications:
-
-	*None
+	
+	*None	
 
 API Deprecation:
 
 	*None
-
+		
 Bug Fixes:
-
+	
 	*Realtime issue fix while attempting to reconnect the server.
 
 
@@ -216,18 +243,18 @@ Date: 30-January-2017
 
 New Features:
 
-	*None
+	*None	
 
 
 API Modifications:
-
-	*None
+	
+	*None	
 
 API Deprecation:
 
 	NOTE: GroupMultiple has been deprecated. Please read the following blog post to understand it better https://goo.gl/6Swaq4
 
-	* 'BuiltGroupMultiple' class deprecated.
+	* 'BuiltGroupMultiple' class deprecated. 
 
 	*BuiltObject
 		1] Deprecated 'addGroup(BuiltGroupMultiple builtGroupMultiple)' method.
@@ -237,9 +264,9 @@ API Deprecation:
 		1] Deprecated 'addGroupMultiple(BuiltGroupMultiple builtGroupMultiple)' method.
 		2] Deprecated 'removeGroupMultiple(BuiltGroupMultiple builtGroupMultiple)' method.
 		3] Deprecated 'getGroupMultiple(String key)' method.
-
+		
 Bug Fixes:
-
+	
 	*None
 
 
@@ -253,20 +280,20 @@ Date: 02-December-2016
 
 New Features:
 
-	*None
+	*None	
 
 
 API Modifications:
-
-	*None
+	
+	*None	
 
 API Deprecation:
 
 	*BuiltUser
 		1] Removed 'requestPresenceAccess(BuiltResultCallBack callBack)' method.
-
+		
 Bug Fixes:
-
+	
 	*None
 
 
@@ -295,15 +322,15 @@ New Features:
     	1] Added 'setUsersWithQuery(BuiltQuery query)' method.
 
    	*BuiltUser
-   		1] Added 'getLastLoginAt()' method.
+   		1] Added 'getLastLoginAt()' method. 	
 
     *BuiltGroup
-    	1] Added 'upsertForReferences(String key, HashMap<String, Object> conditionFieldValues, HashMap<String, Object> newFieldValues)' method.
+    	1] Added 'upsertForReferences(String key, HashMap<String, Object> conditionFieldValues, HashMap<String, Object> newFieldValues)' method.	
 
 
 API Modifications:
-
-	*None
+	
+	*None	
 
 API Deprecation:
 
@@ -323,7 +350,7 @@ API Deprecation:
 	   13] Removed 'acceptRequests()' method.
 
 Bug Fixes:
-
+	
 	*None
 
 
@@ -346,11 +373,11 @@ API Modifications:
 
 	* Renamed QueryResult class to BuiltQueryResult.
 	* Renamed ResponseType enum to BuiltResponseType.
-
+	
 	*BuiltApplication
-		 1] Rename 'fetchClassesSchemaInBackground()' method to 'fetchClassesSchema()'
-		 2] Rename 'fetchLastActivitiesInBackground()' method to 'fetchLastActivities()'
-		 3] Rename 'fetchInfoInBackground()' method to 'fetchInfo()'
+		 1] Rename 'fetchClassesSchemaInBackground()' method to 'fetchClassesSchema()' 
+		 2] Rename 'fetchLastActivitiesInBackground()' method to 'fetchLastActivities()' 
+		 3] Rename 'fetchInfoInBackground()' method to 'fetchInfo()' 
 
 	*BuiltClass
 		 1] Rename 'fetchSchemaInBackground()'	method to 'fetchSchema()'
@@ -365,24 +392,24 @@ API Modifications:
 
 	*BuiltObject
 		 1] Rename 'saveInBackground()' method to 'save()'
-		 2] Rename 'saveEventuallyInBackground()' method to 'saveEventually()'
-		 3] Rename 'saveAsDraftInBackground()' method to 'saveAsDraft()'
-		 4] Rename 'saveAsDraftEventuallyInBackground()' method to 'saveAsDraftEventually()'
-		 5] Rename 'fetchInBackground()' method to 'fetch()'
-		 6] Rename 'destroyInBackground()' method to 'destroy()'
-		 7] Rename 'destroyEventuallyInBackground()' method to 'destroyEventually()'
-
+		 2] Rename 'saveEventuallyInBackground()' method to 'saveEventually()'		 
+		 3] Rename 'saveAsDraftInBackground()' method to 'saveAsDraft()'		 
+		 4] Rename 'saveAsDraftEventuallyInBackground()' method to 'saveAsDraftEventually()'		 
+		 5] Rename 'fetchInBackground()' method to 'fetch()'		 
+		 6] Rename 'destroyInBackground()' method to 'destroy()'		 
+		 7] Rename 'destroyEventuallyInBackground()' method to 'destroyEventually()'		 
+		 
 	*BuiltUpload
 		 1] Rename 'destroyInBackground()' method to 'destroy()'
-		 2] Rename 'fetchInBackground()' method to 'fetch()'
-		 3] Rename 'fetchAllInBackground()' method to 'fetchAll()'
-		 4] Rename 'fetchImagesInBackground()' method to 'fetchImages()'
-		 5] Rename 'fetchVideosInBackground()' method to 'fetchVideos()'
+		 2] Rename 'fetchInBackground()' method to 'fetch()'	 	
+		 3] Rename 'fetchAllInBackground()' method to 'fetchAll()'		 	
+		 4] Rename 'fetchImagesInBackground()' method to 'fetchImages()'		 	
+		 5] Rename 'fetchVideosInBackground()' method to 'fetchVideos()'		 	
 		 6] Rename 'fetchAllTagsInBackground()'	method to 'fetchAllTags()'
 
-	*BuiltUser
+	*BuiltUser		 
 		 1] Rename 'destroyEventuallyInBackground()' method to 'destroyEventually()'
- 		 2] Rename 'destroyInBackground()' method to 'destroy()'
+ 		 2] Rename 'destroyInBackground()' method to 'destroy()'	 
 		 5] Rename 'loginInBackground(String email, String password)' method to 'login(String email, String password)'
 		 6] Rename 'loginWithGoogleAccessTokenInBackground(String accessToken)' method to 'loginWithGoogleAccessToken(String accessToken)'
 		 7] Rename 'loginWithFacebookAccessTokenInBackground(String accessToken)' method to 'loginWithFacebookAccessToken(String accessToken)'
@@ -407,14 +434,14 @@ API Modifications:
 
 	*BuiltQuery
 		 7] Rename 'execInBackground()' method to 'exec()'
-		 8] Rename 'fetchAllTagsInBackground()'	method to 'fetchAllTags()'
-
-
+		 8] Rename 'fetchAllTagsInBackground()'	method to 'fetchAllTags()'	 
+	
+	
 
 API Deprecation:
 
-	* Removed deprecated class 'BuiltSynchronousResponse'
-	* Removed deprecated class 'BuiltNotification'
+	* Removed deprecated class 'BuiltSynchronousResponse' 
+	* Removed deprecated class 'BuiltNotification' 
 
 	*Built
 		 1] Removed deprecated method 'application(Context context, String apiKey, String host)'
@@ -423,8 +450,8 @@ API Deprecation:
 	*BuiltApplication
 		 1] Removed deprecated method 'setURL(String hostName, boolean isSSL)'
 		 2] Removed deprecated method 'setRealTimeURL(String hostName, boolean isSSL)'
-		 3] Removed deprecated method 'getURL()'
-		 4] Removed deprecated method 'getRealTimeURL()'
+		 3] Removed deprecated method 'getURL()'	
+		 4] Removed deprecated method 'getRealTimeURL()'	 
 		 5] Removed deprecated method 'getRealTimePort()'
 		 6] Removed deprecated method 'setRealTimePort(int port)'
 		 7] Removed deprecated method 'getVersion()'
@@ -435,10 +462,10 @@ API Deprecation:
 		12] Removed deprecated method 'fetchInfo()'
 
 	*BuiltClass
-		 1] Removed deprecated method 'fetchSchema()'
+		 1] Removed deprecated method 'fetchSchema()'	
 
 	*BuiltInstallation
-		 1] Removed deprecated method 'createInstallation(String deviceToken, ArrayList<String> installationChannels)'
+		 1] Removed deprecated method 'createInstallation(String deviceToken, ArrayList<String> installationChannels)'	 
 		 2] Removed deprecated method 'destroy()'
 		 3] Removed deprecated method 'updateInstallation(String deviceToken)'
 		 4] Removed deprecated method 'subscribeToChannels(ArrayList<String> installationChannels)'
@@ -459,20 +486,20 @@ API Deprecation:
 		12] Removed deprecated method 'upsertForReference(String key, String referenceKey, Object referenceValue, HashMap<String, Object> newFieldValue)'
 		13] Removed deprecated method 'setReferenceWithObject(String key, Object value)'
 		14] Removed deprecated method 'setReference(String key, Object value)'
-
+	
 	*BuiltRole
-		 1] Removed deprecated method 'getRolesQuery()'
-
+		 1] Removed deprecated method 'getRolesQuery()'	
+		 
 	*BuiltUpload
 		 1] Removed deprecated method 'destroy()'
-		 2] Removed deprecated method 'fetch()'
-		 3] Removed deprecated method 'fetchAll()'
-		 4] Removed deprecated method 'fetchImages()'
-		 5] Removed deprecated method 'fetchVideos()'
-		 6] Removed deprecated method 'fetchAllTags()'
+		 2] Removed deprecated method 'fetch()'		 	
+		 3] Removed deprecated method 'fetchAll()'		 	
+		 4] Removed deprecated method 'fetchImages()'		 	
+		 5] Removed deprecated method 'fetchVideos()'		 	
+		 6] Removed deprecated method 'fetchAllTags()'	
 
-	*BuiltUser
-		 1] Removed deprecated method 'destroyEventually()'
+	*BuiltUser		 
+		 1] Removed deprecated method 'destroyEventually()'	 	
  		 2] Removed deprecated method 'destroy()'
 		 3] Removed deprecated method 'requestPresence(BuiltResultCallBack callBack)'
 		 4] Removed deprecated method 'getUsersQuery()'
@@ -495,8 +522,8 @@ API Deprecation:
 		21] Removed deprecated method 'forgotPassword(String emailId)'
 
 	*BuiltExtension
-		 1] Removed deprecated method 'execute(String functionName, HashMap<String, Object> properties)'
-		 2] Removed deprecated method 'execute(String functionName)'
+		 1] Removed deprecated method 'execute(String functionName, HashMap<String, Object> properties)'	
+		 2] Removed deprecated method 'execute(String functionName)'	
 
 	*BuiltQuery
 		 1] Removed deprecated method 'afterUid(String uid)'
@@ -506,11 +533,11 @@ API Deprecation:
 		 5] Removed deprecated method 'only(ArrayList<String> fieldUid)'
 		 6] Removed deprecated method 'includeReference(ArrayList<String> keys)'
 		 7] Removed deprecated method 'exec()'
-		 8] Removed deprecated method 'fetchAllTags()'
+		 8] Removed deprecated method 'fetchAllTags()'		 
 
 	*BuiltGroup
-		 1] Removed deprecated method 'pushValue(String key, Object value, int index)'
-		 2] Removed deprecated method 'pullValueAtIndex(String key, int index)'
+		 1] Removed deprecated method 'pushValue(String key, Object value, int index)' 	
+		 2] Removed deprecated method 'pullValueAtIndex(String key, int index)'	
 
 	*BuiltPresence
 		 1] Removed deprecated method 'removeFromWhiteList(Object user)'
@@ -519,16 +546,16 @@ API Deprecation:
 		 1] Removed deprectated method 'setApplicationKey(Context context, String applicationKey)'
 
 	*BuiltUIListViewController
-		 1] Removed deprecated method 'BuiltUIListViewController(Context context, String app_api_key, String classUid)'
+		 1] Removed deprecated method 'BuiltUIListViewController(Context context, String app_api_key, String classUid)'		 	 	  
 
-	*BuiltUILoginController
-		 1] Removed deprecated method 'setApplicationKey(String applicationKey)'
+	*BuiltUILoginController	 
+		 1] Removed deprecated method 'setApplicationKey(String applicationKey)'		 	 	  
 
-	*BuiltUISignUpController
+	*BuiltUISignUpController	 
 		 1] Removed deprecated method 'setApplicationKey(String applicationKey)'
 
 Bug Fixes:
-
+	
 	*Improvements in method info of BuiltQuery and BuiltInstallation classes.
 
 
@@ -552,10 +579,10 @@ New Features:
 
 
 API Modifications:
-
+	
 	*None
-
-
+	
+	
 
 API Deprecation:
 
@@ -564,12 +591,12 @@ API Deprecation:
 		 2] Deprecated method 'pullValueAtIndex(String key, int index)'
 
 	*BuiltGroup
-		 1] Deprecated method 'pushValue(String key, Object value, int index)'
-		 2] Deprecated method 'pullValueAtIndex(String key, int index)'
+		 1] Deprecated method 'pushValue(String key, Object value, int index)' 	
+		 2] Deprecated method 'pullValueAtIndex(String key, int index)'	 
 
 
 Bug Fixes:
-
+	
 	*Improvements in method info of BuiltQuery and BuiltInstallation classes.
 
 
@@ -584,18 +611,18 @@ Date: 18-April-2016
 
 New Features:
 
-	* Added class 'BuiltConfig'
-	* Added class 'BuiltSyncResult'
+	* Added class 'BuiltConfig' 
+	* Added class 'BuiltSyncResult' 
 	* Added class 'BuiltKeyStore'
 
 	*Built
 		 1] Added method 'application(Context context, java.lang.String apiKey, BuiltConfig config)'
 
 	*BuiltApplication
-		 1] Added method 'sync(BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
-		 2] Added method 'sync(java.lang.Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
-		 3] Added method 'syncExcept(java.lang.String[] exceptClassUid, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
-		 4] Added method 'syncExcept(String[] exceptClassUid, Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
+		 1] Added method 'sync(BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'		 
+		 2] Added method 'sync(java.lang.Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'		 
+		 3] Added method 'syncExcept(java.lang.String[] exceptClassUid, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'		 
+		 4] Added method 'syncExcept(String[] exceptClassUid, Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'		
 		 5] Added method 'syncOnly(java.lang.String[] onlyClassUid, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
 		 6] Added method 'syncOnly(String[] onlyClassUid, Object dateObject, BuiltAppSyncCallback appSyncCallback, BuiltClassSyncCallback syncCallback)'
 		 7] Added method 'keyStore()'
@@ -603,11 +630,11 @@ New Features:
 		 9] Added method 'clearOfflineData(java.lang.String[] exceptClassUid, java.lang.String[] onlyClassUid)'
 
 	*BuiltObject
-		 1] Added method 'offline()'
-
+		 1] Added method 'offline()'	 
+      
 	*BuiltQuery
 		 1] Added method 'offline()'
-
+		 
 	*BuiltConstant
 		 1] Added Constant 'KEY_CREATED'
 		 2] Added Constant 'KEY_DELETED'
@@ -617,10 +644,10 @@ New Features:
 
 
 API Modifications:
-
+	
 	*None
-
-
+	
+	
 
 API Deprecation:
 
@@ -628,11 +655,11 @@ API Deprecation:
 		 1] Deprecated method 'application(Context context, String apiKey, String host)'
 		 2] Deprecated method 'application(Context context, String apiKey, String host, boolean isSSL)'
 		 3] Removed method 'disableUserMetrics()'
-
+		 
 	*BuiltApplication
-		 1] Deprecated method 'getRealTimePort()'
-		 2] Deprecated method 'getRealTimeURL()'
-		 3] Deprecated method 'getURL()'
+		 1] Deprecated method 'getRealTimePort()' 	
+		 2] Deprecated method 'getRealTimeURL()'	
+		 3] Deprecated method 'getURL()'	 
 		 4] Deprecated method 'setRealTimePort(int port)'
 		 5] Deprecated method 'setRealTimeURL(java.lang.String hostName, boolean isSSL)'
 		 6] Deprecated method 'setURL(java.lang.String hostName, boolean isSSL)'
@@ -644,19 +671,19 @@ API Deprecation:
 		 2] Deprecated method 'divide(java.lang.String key, int value)'
 
 	*BuiltQuery
-		 1] Deprecated method 'afterUid(java.lang.String uid)'
+		 1] Deprecated method 'afterUid(java.lang.String uid)' 	
 		 2] Deprecated method 'beforeUid(java.lang.String uid)'
 
-    *Deprecated class BuiltSynchronousResponse
+    *Deprecated class BuiltSynchronousResponse 		 
 
     *Deprecated class BuiltNotification
-
+		 
 
 
 Bug Fixes:
-
+	
 	*None
-
+		
 
 
 
@@ -669,26 +696,26 @@ Date: 02-September-2015
 New Features:
 
 	*None
-
-
+		 
+		 
 
 API Modifications:
-
+	
 	*None
-
-
-
+	
+	
+	
 
 API Deprecation:
 
 	*None
-
-
+		 
+		 
 
 Bug Fixes:
-
-	*fixed issues of realtime.
-
+	
+	*fixed issues of realtime.	
+		
 
 
 
@@ -704,33 +731,33 @@ New Features:
 		 2] Added method 'only(String[])'
 		 3] Added method 'onlyWithReferenceUid(String[], String)'
 		 3] Added method 'exceptWithReferenceUid(String[], String)'
-
+      
 	*BuiltQuery
 		 1] Added method 'except(String[])'
 		 2] Added method 'onlyWithReferenceUid(String[], String)'
 		 3] Added method 'exceptWithReferenceUid(String[], String)'
-
-
+		 
+		 
 
 API Modifications:
-
+	
 	*None
-
-
-
+	
+	
+	
 
 API Deprecation:
 
 	*BuiltQuery
 		 1] Deprecated method 'except(ArrayList<String>)'
 		 2] Deprecated method 'onlyWithReferenceUid(ArrayList<String>, String)'
-
-
+		 
+		 
 
 Bug Fixes:
-
-	*fixed issues of api docs snippets of BuiltQuery.
-
+	
+	*fixed issues of api docs snippets of BuiltQuery.	
+		
 
 
 
@@ -754,7 +781,7 @@ New Features:
 		4] Added method  'removeRoles(String[])'
 
 	*BuiltACL:
-		1] Added method 'setAnonymousReadAccess(boolean)'
+		1] Added method 'setAnonymousReadAccess(boolean)' 
 		2] Added method 'setAnonymousWriteAccess(boolean)'
 		3] Added method 'setAnonymousDeleteAccess(boolean)'
 		4] Added method 'getAnonymousReadAccess()'
@@ -762,12 +789,12 @@ New Features:
 		6] Added method 'getAnonymousDeleteAccess()'
 
 	*BuiltApplication:
-		1] Added method  'trackAnonymously(boolean)'
+		1] Added method  'trackAnonymously(boolean)' 
 		2] Added methods 'fetchClassesSchema()' and 'fetchClassesSchemaInBackground(BuiltFetchSchemaCallback)'
 
 
 	*BuiltAnalytics:
-		1] Added method 'setDynamicProperties(BuiltDynamicPropertiesCallback)'
+		1] Added method 'setDynamicProperties(BuiltDynamicPropertiesCallback)'	
 
 	*BuiltObject:
 		1] Added method  'addUpsertForReference(String, HashMap<String, Object>, HashMap<String, Object>)'
@@ -778,7 +805,7 @@ New Features:
 
 	*BuiltQuery:
 		1] Added method  'setRawQuery(String)'
-		2] Added method  'only(String[])'
+		2] Added method  'only(String[])'	
 		3] Added methods 'includeReference(String)' and 'includeReference(String[])'
 
 	*BuiltPresence:
@@ -786,10 +813,10 @@ New Features:
 		2] Added methods 'removeFromWhiteList(String)' and 'removeFromWhiteList(BuiltUser)'
 
 	*BuiltGroup:
-		1] new class introduced
+		1] new class introduced	
 
 	*BuiltGroupMultiple:
-		1] new class introduced
+		1] new class introduced	
 
 	*BuiltImageView
 		1] Added method 'setApplication(Context, BuiltApplication)'
@@ -799,21 +826,21 @@ New Features:
 		2] Made layout variables public for edit
 
 	*BuiltSignUpUIController
-		1] Added method 'setApplication(BuiltApplication)'
+		1] Added method 'setApplication(BuiltApplication)'		
 		2] Made layout variables public for edit
 
 	*BuiltUIListViewController
 		1] Added constructor 'BuiltUIListViewController(Context, BuiltClass)' and 'BuiltUIListViewController(Context, BuiltApplication, String)'
 
 
-
+		
 
 API Modifications:
 
 
 	*BuiltUser
 		1] renamed method 'requestPresence(BuiltResultCallBack)' to 'requestPresenceAccess(BuiltResultCallBack)'
-
+		
 	*BuiltRole
 		1] removed method 'addUser(ArrayList<Object>)'
 		2] removed method 'addRole(ArrayList<Object>)'
@@ -825,12 +852,12 @@ API Deprecation:
 
 
 	*BuiltApplication:
-		1] Deprecated method 'setURL(String, boolean)'
+		1] Deprecated method 'setURL(String, boolean)'	
 
 	*BuiltObject:
 		1] Deprecated method 'upsertForReference(String, String, Object, HashMap<java.lang.String, java.lang.Object>)'
 		2] Deprecated method 'setReference(String, Object)'
-		3] Deprecated method 'setReferenceWithObject(String, Object)'
+		3] Deprecated method 'setReferenceWithObject(String, Object)'                   
 
 	*BuiltUser:
 		1] Deprecated method 'requestPresence(BuiltResultCallBack)'
@@ -844,7 +871,7 @@ API Deprecation:
 		1] Deprecated method 'getRolesQuery()'
 
 	*BuiltPresence:
-		1] Deprecated method 'removeFromWhiteList(Object)'
+		1] Deprecated method 'removeFromWhiteList(Object)'	
 
 	*BuiltImageView:
 		1] Deprecated method 'setApplicationKey(Context, String)'
@@ -863,7 +890,7 @@ API Deprecation:
 
 Bug Fixes:
 
-	*fixed issues of api docs snippets.
+	*fixed issues of api docs snippets.	
 
 	*fixed issue regarding UIControllers unable to point different built io backend servers.
 
