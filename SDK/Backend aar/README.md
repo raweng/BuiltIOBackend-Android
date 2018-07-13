@@ -1,7 +1,7 @@
 Built.io
 =========
 
-<h4>built.io is a backend for your app.</h4>
+built.io is a backend for your app.
 
 
 This means that you only concentrate on the client side of development. And our SDKs make it easy to develop on your client!
@@ -19,12 +19,12 @@ We feature a complete set of functionality, such as:
 - Push Notifications to iOS and Android devices  
 
 <h4>Note:</h4>
-- Built.io-4.2.1.aar contains built.io SDK.
+- Built.io-4.3.0.aar contains built.io SDK.
 
 Version
 ----
 
-4.2.1
+4.3.0
 
 
 Installation
@@ -32,25 +32,27 @@ Installation
 
 Installation can be done in two ways.
 
-#####If user want to use built.io SDK without realtime.
+##### If user want to use built.io SDK without realtime.
 
  1. Copy Built.io-xxx.aar to your project's libs folder.
 		  
  2. Add dependency code in your build.gradle file. 
+        
         repositories {
             flatDir {
-    	        dirs 'libs'
+    	           dirs 'libs'
             }
         }
         dependencies {compile 'com.raweng.built:Built.io-x.x.x:x.x.x@aar'}
   
-####(OR)
+##### (OR)
     
-#####If user want to use built.io SDK with realtime.
+##### If user want to use built.io SDK with realtime.
 
  1. Copy Built.io-realtime-xxx.aar to your project's libs folder.
 		  
  2. Add dependency code in your build.gradle file. 
+        
         repositories {
             flatDir {
     	        dirs 'libs'
@@ -58,13 +60,14 @@ Installation can be done in two ways.
         }
         dependencies {compile 'com.raweng.built:Built.io-realtime-x.x.x:x.x.x@aar'}
  
-####(OR)
+##### (OR)
 
-#####If user want to use built.io SDK with android wear.
+##### If user want to use built.io SDK with android wear.
 
- 1. Copy Built.io-wearable-xxx.aar to your project's libs folder.
+ 1. Copy Built.io-wearable-beta-xxx.aar to your project's libs folder.
 		  
  2. Add dependency code in your build.gradle file. 
+        
         repositories {
             flatDir {
     	        dirs 'libs'
