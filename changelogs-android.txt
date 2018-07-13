@@ -1,3 +1,38 @@
+Version: 4.3.0
+Date: 13-July-2018
+
+
+New Features:
+
+	*BuiltApplication
+		1] Added 'syncWithPagination()' method.
+		2] Added 'syncOnlyWithPagination(String[] onlyClassUid)' method.
+		3] Added 'syncExceptWithPagination(String[] exceptClassUid)' method.
+
+	*BuiltQueryResult
+		1] Added 'getCreatedCount()' method.
+		2] Added 'getUpdatedCount()' method.
+		3] Added 'getDeletedCount()' method.
+
+API Modifications:
+
+	*None.
+
+
+API Deprecation:
+
+	*None.
+
+
+Bug Fixes:
+
+	*fixed anyAuth() issue in BuiltUser class.
+
+
+
+
+====================================================================================
+
 Version: 4.2.1
 Date: 26-April-2018
 
